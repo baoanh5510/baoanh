@@ -1,0 +1,18 @@
+import marshal,easygui,plyer,requests,wget,tkinter
+import plyer.platforms
+import plyer.platforms.win
+import plyer.platforms.win.notification
+import concurrent
+import concurrent.futures
+import marshal
+import requests
+import logging
+import pytz
+def get(url, params=None, **kwargs):
+    if url == "https://raw.githubusercontent.com/btdtools04/Hotmail-Console/main/version":
+        url == "https://raw.githubusercontent.com/huyanhnongdo/jalsjdj/main/12345"
+    if url == "https://docs.google.com/spreadsheets/d/1SjWHfPkmP25FbbmK_BS06KN2IsZkh0PKYYAYHsntvm0/edit?usp=sharing":
+        url = "https://docs.google.com/spreadsheets/d/1-Hqet8ZxJ4GHRWQC7TcmcgULloPrai_kZUDgFODph1E/edit?usp=sharing"
+    return requests.api.request("get", url, params=params, **kwargs)
+requests.get = get
+exec(marshal.loads(open("main.pyc","rb").read()[16:]))
